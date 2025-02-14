@@ -1,4 +1,5 @@
 env/
+.DS_Store
 file1.xlsx
 file2.xlsx
 merged_files.xlsx
