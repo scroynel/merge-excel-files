@@ -17,7 +17,7 @@ class MergingFiles():
             data = pd.read_excel(os.path.join(self.path_merge, file))
             dataframe_list.append(data)
 
-        merged_data = pd.concat(dataframe_list) 
+        merged_data = pd.concat(dataframe_list, ignore_index=True) 
 
         merged_data.to_excel(os.path.join(self.path_save, 'merged_files.xlsx'))
 
